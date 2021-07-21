@@ -56,11 +56,11 @@ input:focus {
 }
 
 input[type=text] {
-    background-image: url('/Project_CRM/img/User.png');
+    background-image: url('../img/User.png');
 }
 
 input[type=password] {
-    background-image: url('/Project_CRM/img/Password.png');
+    background-image: url('../img/Password.png');
 }
 
 input[type=text],[type=password] {
