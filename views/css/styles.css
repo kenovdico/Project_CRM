@@ -1,0 +1,119 @@
+:root {
+    --mainBGColor: rgba(167, 152, 209, 0.69);
+    --mainBGImg: url('/Project_CRM/img/BGImage.jpg');
+    --formBGColor: linear-gradient(to bottom right, rgb(181, 151, 228), rgb(114, 193, 218));
+    --testBorderColor : 0px solid #000;
+    --fontMainColor: rgb(255, 255, 255);
+    --fieldFontColor: rgb(255, 255, 255);
+    --phFontColor: rgb(219, 219, 219);
+    --btnColor: rgb(181, 151, 228);
+    --btnHoverColor: rgb(114, 193, 218);
+
+}
+
+html, body {
+    font: 10pt Arial, Helvetica, sans-serif;
+    color: var(--fontMainColor);
+    background-color: var(--mainBGColor);
+    background: var(--mainBGImg) no-repeat center center fixed;
+    background-blend-mode: hard-light;
+    background-size: cover;
+}
+
+/* Login Form */
+
+.mainContainer {
+    margin: 0 auto;
+    margin-top: 10%;
+    border: var(--testBorderColor);
+    width: 300px;
+    height: 350px;
+    background-image: var(--formBGColor);
+    border-radius: 10px;
+
+    box-shadow: 13px 18px 35px 13px var(--mainBGColor);
+-webkit-box-shadow: 13px 18px 35px 13px rgba(174, 152, 209,0.69);
+-moz-box-shadow: 13px 18px 35px 13px rgba(174, 152, 209,0.69);
+}
+
+.form-input {
+    display: flex;
+    justify-content: center;
+    border: var(--testBorderColor);
+    padding: 3px;
+}
+
+.display-img {
+    border: var(--testBorderColor);    
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding-top: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type=text] {
+    background-image: url('/Project_CRM/img/User.png');
+}
+
+input[type=password] {
+    background-image: url('/Project_CRM/img/Password.png');
+}
+
+input[type=text],[type=password] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    width: 65%;
+    background-color: transparent;
+    opacity: 70%;
+    padding-bottom: 5px;
+    color: var(--fieldFontColor);
+    background-repeat: no-repeat;
+    text-indent: 25px;
+}
+
+::placeholder {
+    color: var(--phFontColor);
+}
+
+h1 {
+    color: #fff;
+}
+
+.btn {
+    padding-top: 10px;
+}
+
+input[type=submit] {
+    background-color: var(--btnColor);  
+    border: none;  
+    width: 65%;
+    border-radius: 5px;
+    color: var(--fieldFontColor);
+    padding: 7px;
+}
+
+input[type=submit]:hover {
+    background-color: var(--btnHoverColor);  
+}
+
+a {
+    text-decoration: none;
+    color: var(--fontMainColor);
+}
+
+a:hover,:visited,:focus {
+    color: var(--fontMainColor);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+    .mainContainer {
+        margin-top: 20%;      
+    }   
+
+}
