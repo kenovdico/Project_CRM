@@ -1,6 +1,6 @@
 :root {
     --mainBGColor: rgba(167, 152, 209, 0.69);
-    --mainBGImg: url('/Project_CRM/img/BGImage.jpg');
+    --mainBGImg: url('../img/BGImage.jpg');
     --formBGColor: linear-gradient(to bottom right, rgb(181, 151, 228), rgb(114, 193, 218));
     --testBorderColor : 0px solid #000;
     --fontMainColor: rgb(255, 255, 255);
