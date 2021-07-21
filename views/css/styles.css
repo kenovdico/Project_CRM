@@ -30,10 +30,6 @@ html, body {
     height: 350px;
     background-image: var(--formBGColor);
     border-radius: 10px;
-
-    box-shadow: 13px 18px 35px 13px var(--mainBGColor);
--webkit-box-shadow: 13px 18px 35px 13px rgba(174, 152, 209,0.69);
--moz-box-shadow: 13px 18px 35px 13px rgba(174, 152, 209,0.69);
 }
 
 .form-input {
